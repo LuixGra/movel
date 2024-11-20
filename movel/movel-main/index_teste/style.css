@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body{
+    background-color: #615050;
+}
+
+.head-start{
+    
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+    text-align: center;
+    padding: 5px;
+    height: auto;
+    background-color: #f5f1e8;
+
+
+}
+
+.button{
+    padding: 13px;
+    border-radius: 10px;
+    background-color:white;
+
+    transition: 0.4s ease;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.button:hover{
+    background-color: #ad9a6f;
+}
+
+.social-buttons{
+    width: 100%;
+    margin: auto;
+    justify-content: right;
+    display: flex;
+}
+
+.logo{
+    width: 100%;
+    margin: auto;
+    justify-content: left;
+    display: flex;
+}
+
+.site-buttons{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.carousel {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-slide {
+      min-width: 100%;
+      height: 300px; /* Altura do banner */
+      background-size: cover;
+      background-position: center;
+    }
+    .slide-1 {
+      background-image: url('../assets/chair-pictures-jxmecd3j9r4k340f.jpg');
+    }
+    .slide-2 {
+      background-image: url('../assets/comoda-para-quarto-rogerio-shinagawa-alain-brugier.webp');
+    }
+    .slide-3 {
+      background-image: url('../assets/premium_photo-1681449856688-2abd99ab5a73.jpg');
+    }
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .carousel-button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+    .carousel-button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+@media (min-width: 768px){
+    .button{
+        padding: 13px;
+        border-radius: 10px;
+        background-color:white;
+        
+        width: 70px;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+
+    .site-buttons{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+    }
+
+    .head-start{
+        padding: 10px;
+    }
+    .barra-pesquisa input{
+        width: 75%;
+        padding: 15px;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+    }
+}
+
+.ft{
+    display: flex;
+    bottom: 0;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+    gap: 30px;
+
+}
+
+.barra-pesquisa{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+
+}
+
+.barra-pesquisa input{
+    width: 87%;
+    padding: 15px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+.titulo{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.titulo h1{
+    color:#f5f1e8;
+    font-size: 3rem;
+    font-weight: 600;
+    
+}
+
+
