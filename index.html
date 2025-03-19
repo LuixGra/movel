@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango+</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html"><div class="logo">Movel+</div></a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            
+            <a href="login.html">Login</a>
+            <button id="dark-mode-toggle">🌙</button>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        <div class="slides-container">
+            <div class="slide active" style="background-image: url('assets/1.jpg');">
+                <h1>Descontos Espaciais</h1>
+                <p>Aproveite as ofertas do futuro!</p>
+            </div>
+            <div class="slide" style="background-image: url('assets/2.jpg');">
+                <h1>Design Moderno</h1>
+                <p>Explore móveis inovadores!</p>
+            </div>
+            <div class="slide" style="background-image: url('assets/3.jpg');">
+                <h1>Sustentabilidade</h1>
+                <p>Móveis ecológicos para o amanhã!</p>
+            </div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </section>
+    
+    <section class="search-container">
+        <input type="text" id="search-input" placeholder="Busque pelo móvel dos seus sonhos...">
+        <button id="search-btn">🔍</button>
+    </section>
+    
+    <section class="categories">
+        <button class="category-btn" data-category="todos">Todos</button>
+        <button class="category-btn" data-category="mesa">Mesas</button>
+        <button class="category-btn" data-category="sofa">Sofás</button>
+        <button class="category-btn" data-category="cadeira">Cadeiras</button>
+    </section>
+    
+    <section class="shop">
+        <h2>Explore a Loja</h2>
+        <div class="shop-grid">
+            <div class="product" data-category="mesa" onclick="openPopup()">
+                <img src="mesa.jpg" alt="Mesa Holográfica">
+                <h3>Mesa Holográfica</h3>
+                <p class="info">Dimensões: 120x80x75 cm</p>
+                <p class="category">Material: Vidro e Aço</p>
+                <p class="price">R$ 1.900,00</p>
+            </div>
+            <div class="product" data-category="sofa" onclick="openPopup()">
+                <img src="sofa.jpg" alt="Sofá Espacial">
+                <h3>Sofá Espacial</h3>
+                <p class="info">Dimensões: 200x90x85 cm</p>
+                <p class="category">Material: Tecido Luminescente</p>
+                <p class="price">R$ 3.500,00</p>
+            </div>
+            <div class="product" data-category="cadeira" onclick="openPopup()">
+                <img src="cadeira.jpg" alt="Cadeira Orbital">
+                <h3>Cadeira Orbital</h3>
+                <p class="info">Dimensões: 50x50x100 cm</p>
+                <p class="category">Material: Fibra de Carbono</p>
+                <p class="price">R$ 750,00</p>
+            </div>
+        </div>
+    </section>
+    
+        <!-- Popup Modal -->
+        <div id="popup-modal" class="popup-modal">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>VENHA CONHECER A LOJA</h2>
+                <p>Explore as nossas opções exclusivas de móveis!</p>
+                <p>Não dura 2 minutos!!</p>
+                <button class="login-btn" onclick="window.location.href='login.html'">LOGIN</button>
+            </div>
+        </div>
+    
+    <footer class="footer">
+        <p>Alto Universitario, S/N - Guararema, Alegre - ES, 29500-000</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

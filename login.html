@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mango+</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html"><div class="logo">Movel+</div></a>
+        <button id="dark-mode-toggle" aria-label="Alternar Modo Escuro">🌙</button>
+    </header>
+
+    <section class="login-container">
+        <div class="login-form">
+            <h2>Entrar</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input-group">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Alto Universitario, S/N - Guararema, Alegre - ES, 29500-000</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

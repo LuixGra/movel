@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango+</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html"><div class="logo">Movel+</div></a>
+    
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../login.html">Login</a>
+            <button id="dark-mode-toggle" aria-label="Ativar/desativar modo escuro">🌙</button>
+    
+            <!-- Botão Shop Cart -->
+            <div class="shop-cart">
+                <button id="shop-cart-btn">🛒</button>
+                <div class="dropdown-content" id="shop-cart-info">
+                    <p><strong>Total:</strong> <span id="total-price">R$ 0,00</span></p>
+                    <button id="checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+            
+    
+            <!-- Dropdown de Conta -->
+            <div class="account-dropdown">
+                <button id="account-btn" aria-label="Menu da conta">Conta ▼</button>
+                <div class="dropdown-content" id="account-info">
+                    <p><strong>Nome:</strong> <span id="user-name">-</span></p>
+                    <p><strong>Endereço:</strong> <span id="user-address">-</span></p>
+                    <p><strong>Email:</strong> <span id="user-email">-</span></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    
+    
+    <section class="banner">
+        <div class="slides-container">
+            <div class="slide active" style="background-image: url('assets/1.jpg');">
+                <h1>Descontos Espaciais</h1>
+                <p>Aproveite as ofertas do futuro!</p>
+            </div>
+            <div class="slide" style="background-image: url('assets/2.jpg');">
+                <h1>Design Moderno</h1>
+                <p>Explore móveis inovadores!</p>
+            </div>
+            <div class="slide" style="background-image: url('assets/3.jpg');">
+                <h1>Sustentabilidade</h1>
+                <p>Móveis ecológicos para o amanhã!</p>
+            </div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </section>
+    
+    <section class="search-container">
+        <input type="text" id="search-input" placeholder="Busque pelo móvel dos seus sonhos...">
+        <button id="search-btn">🔍</button>
+    </section>
+    
+    <section class="categories">
+        <button class="category-btn" data-category="todos">Todos</button>
+        <button class="category-btn" data-category="mesa">Mesas</button>
+        <button class="category-btn" data-category="sofa">Sofás</button>
+        <button class="category-btn" data-category="cadeira">Cadeiras</button>
+    </section>
+    
+    <section class="shop">
+        <h2>Explore a Loja</h2>
+        <div class="shop-grid">
+            <div class="product" data-category="mesa">
+                <img src="mesa.jpg" alt="Mesa Holográfica">
+                <h3  clas="produt-name">Mesa Holográfica</h3>
+                <p class="info">Dimensões: 120x80x75 cm</p>
+                <p class="category">Material: Vidro e Aço</p>
+                <p class="price">R$ 1.900,00</p>
+                <button class="add-to-cart" data-id="1">Adicionar ao Carrinho</button>
+                <button class="buy-now" data-id="1">Comprar Agora</button>
+            </div>
+    
+            <div class="product" data-category="sofa">
+                <img src="sofa.jpg" alt="Sofá Espacial">
+                <h3>Sofá Espacial</h3>
+                <p class="info">Dimensões: 200x90x85 cm</p>
+                <p class="category">Material: Tecido Luminescente</p>
+                <p class="price">R$ 3.500,00</p>
+                <button class="add-to-cart" data-id="2">Adicionar ao Carrinho</button>
+                <button class="buy-now" data-id="2">Comprar Agora</button>
+            </div>
+    
+            <div class="product" data-category="cadeira">
+                <img src="cadeira.jpg" alt="Cadeira Orbital">
+                <h3>Cadeira Orbital</h3>
+                <p class="info">Dimensões: 50x50x100 cm</p>
+                <p class="category">Material: Fibra de Carbono</p>
+                <p class="price">R$ 750,00</p>
+                <button class="add-to-cart" data-id="3">Adicionar ao Carrinho</button>
+                <button class="buy-now" data-id="3">Comprar Agora</button>
+            </div>
+    
+            <div class="product" data-category="cadeira">
+                <img src="cadeira2.jpg" alt="Cadeira Lunar">
+                <h3>Cadeira Lunar</h3>
+                <p class="info">Dimensões: 55x55x105 cm</p>
+                <p class="category">Material: Alumínio e Couro</p>
+                <p class="price">R$ 950,00</p>
+                <button class="add-to-cart" data-id="4">Adicionar ao Carrinho</button>
+                <button class="buy-now" data-id="4">Comprar Agora</button>
+            </div>
+    
+            <div class="product" data-category="mesa">
+                <img src="mesa2.jpg" alt="Mesa Flutuante">
+                <h3>Mesa Flutuante</h3>
+                <p class="info">Dimensões: 140x90x75 cm</p>
+                <p class="category">Material: Madeira e Imã Antigravidade</p>
+                <p class="price">R$ 5.200,00</p>
+                <button class="add-to-cart" data-id="5">Adicionar ao Carrinho</button>
+                <button class="buy-now" data-id="5">Comprar Agora</button>
+            </div>
+    
+            <div class="product" data-category="sofa">
+                <img src="sofa2.jpg" alt="Sofá Eclipse">
+                <h3>Sofá Eclipse</h3>
+                <p class="info">Dimensões: 210x95x85 cm</p>
+                <p class="category">Material: Veludo Sintético e Aço</p>
+                <p class="price">R$ 4.100,00</p>
+                <button class="add-to-cart" data-id="6">Adicionar ao Carrinho</button>
+                <button class="buy-now" data-id="6">Comprar Agora</button>
+            </div>
+    
+            <div class="product" data-category="cadeira">
+                <img src="cadeira3.jpg" alt="Cadeira Eclipse">
+                <h3>Cadeira Eclipse</h3>
+                <p class="info">Dimensões: 52x52x98 cm</p>
+                <p class="category">Material: Madeira e Tecido</p>
+                <p class="price">R$ 680,00</p>
+                <button class="add-to-cart" data-id="7">Adicionar ao Carrinho</button>
+                <button class="buy-now" data-id="7">Comprar Agora</button>
+            </div>
+    
+            <div class="product" data-category="iluminacao">
+                <img src="lampada.jpg" alt="Luminária Nebulosa">
+                <h3>Luminária Nebulosa</h3>
+                <p class="info">Dimensões: 30x30x60 cm</p>
+                <p class="category">Material: Vidro Fosco e LED Colorido</p>
+                <p class="price">R$ 450,00</p>
+                <button class="add-to-cart" data-id="8">Adicionar ao Carrinho</button>
+                <button class="buy-now" data-id="8">Comprar Agora</button>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Modal de Confirmação -->
+    <div id="popup-modal" class="popup-modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Confirmação</h3>
+            <p>Você deseja adicionar este item ao carrinho?</p>
+            <p><strong>Preço:</strong> <span id="modal-item-price">R$ 0,00</span></p>
+            <div class="modal-buttons">
+                <button id="modal-confirm-btn" class="modal-btn confirm">Confirmar</button>
+                <button id="modal-cancel-btn" class="modal-btn cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    
+    <footer class="footer">
+        <p>Alto Universitario, S/N - Guararema, Alegre - ES, 29500-000</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
