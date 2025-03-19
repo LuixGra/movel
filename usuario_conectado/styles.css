@@ -339,6 +339,7 @@ body.dark-mode {
     margin-top: 10px;
     width: 100%;
     transition: background 0.3s;
+    
 }
 
 /* Estilo para o botão "Adicionar ao Carrinho" */
@@ -374,6 +375,7 @@ body.dark-mode {
     padding: 8px 12px;
     border-radius: 5px;
     transition: background 0.3s;
+    
 }
 
 #shop-cart-btn:hover {
